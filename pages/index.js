@@ -11,6 +11,45 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import { nftaddress, nftmarketaddress } from "../config";
+var nft2 = require("/public/nft2.jpg");
+var nft3 = require("/public/nft3.jpg");
+var nft4 = require("/public/nft4.jpg");
+var nft5 = require("/public/nft5.jpg");
+var nft6 = require("/public/nft6.jpg");
+var nft7 = require("/public/nft7.jpg");
+
+const nft = [
+  {
+    name: "CryptoPunk",
+    image: nft2,
+    price: "0.55",
+  },
+  {
+    name: "Quiet of Nature",
+    image: nft3,
+    price: "0.33",
+  },
+  {
+    name: "LOOKS RARE",
+    image: nft4,
+    price: "1.20",
+  },
+  {
+    name: "Don't",
+    image: nft5,
+    price: "0.45",
+  },
+  {
+    name: "Peace from Mind",
+    image: nft6,
+    price: "0.60",
+  },
+  {
+    name: "nullius in verba",
+    image: nft7,
+    price: "0.85",
+  },
+];
 
 export default function Home() {
   const [nfts, setNfts] = useState([]);
@@ -86,7 +125,7 @@ export default function Home() {
       <Header />
       <Hero />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-        {nfts.map((nft, i) => (
+        {nft.map((nft, i) => (
           <Card key={i} image={nft.image} name={nft.name} price={nft.price} />
         ))}
       </div>

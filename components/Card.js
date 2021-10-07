@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Card = ({ image, name, price }) => {
@@ -7,7 +8,13 @@ const Card = ({ image, name, price }) => {
 
       <section className="mt-3 duration-500 ease-in-out shadow-lg hover:-translate-y-1">
         {/* img */}
-        <img src={image} className="object-cover" height="450" alt="" />
+        <Image
+          src={image}
+          className="object-cover"
+          height="600"
+          width="600"
+          alt=""
+        />
         <div className="bg-white">
           {/* top */}
           <div className="border-b-2 border-gray-100">
