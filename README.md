@@ -1,15 +1,6 @@
-# Basic Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+# [KnownOrigin](https://veganzone.netlify.app/)
+![KnownOrigin](https://www.darwinbalino.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fnft.d3edd4f3ba76b6d48e28e0238090cec3.png&w=828&q=75)
+## Technologies
+- Frameworks: [Next.js](https://nextjs.org/) + [Hardhat.js](https://hardhat.org/)
+- Deployment: [Vercel](https://vercel.com/)
+- Styling: [Tailwind CSS](https://tailwindcss.com/)
