@@ -1,8 +1,11 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
+
 var nft1 = require("/public/nft1.jpg");
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <>
       <div>
@@ -25,7 +28,10 @@ const Hero = () => {
             <h1 className="font-serif text-5xl leading-tight md:text-7xl">
               and collect NFTs
             </h1>
-            <button className="px-3 py-2 font-sans font-light bg-transparent rounded-md cursor-pointer hover:bg-gray-200 hover:text-gray-900 mt-7 text-md ring-1 ring-gray-200">
+            <button
+              onClick={() => router.push("/marketplace")}
+              className="px-3 py-2 font-sans font-light bg-transparent rounded-md cursor-pointer hover:bg-gray-200 hover:text-gray-900 mt-7 text-md ring-1 ring-gray-200"
+            >
               View marketplace
             </button>
             <h1 className="mt-5 font-sans font-light text-md">
